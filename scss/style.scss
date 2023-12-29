@@ -1,0 +1,1064 @@
+@import "mixin";
+
+// In caso non fosse esistente il font 'Outfit', l'alternativa è Arial. Grazie
+
+// Legenda:
+
+// Media
+
+// all: Significa che tutti gli attributi sono uguali
+// first2: Significa che i primi 2 attributi sono uguali
+// first3: Incrementato di 1.
+// mid2: Significa che i 2 attributi in mezzo sono uguali
+// last2: Significa che gli utltimi 2 attributi sono uguali.
+// last3: Incrementato di 1.
+
+// L'unico difetto è che il menù, visualizzato dal dispositivo mobile piccolo fino a quello grande non è tanto fatto bene   
+
+// Aggiornamrnto: Il menù è cambiato da come lo noterete, unico difetto, è che si vede bene ma non spazia fra il titolo e il menù
+
+// Aggiornamento 2: Aggiunto la misura per il tablet, per gli input che mantengano la loro coerenza dal mobile piccolo al 4K
+
+
+.topnav {
+    @include topnav;
+    
+    ul {
+    @include menu-ul;
+
+        &:hover {
+        @include hover-ul;
+        }
+
+        @media all and (max-width: 320px) {
+            @include ul-media-small;
+        }
+    
+        @media all and (min-width: 375px) and (max-width: 424px) {
+            @include ul-media-last2;
+        }
+
+        @media all and (min-width: 425px) and (max-width: 767px) {
+            @include ul-media-last2;
+        }
+    
+
+    li {    
+    @include menu-li;
+
+
+        @media all and (max-width: 320px) {
+            @include li-media-small;
+        }
+    
+        @media all and (min-width: 374px) and (max-width: 424px) {
+            @include li-media-last2;
+        }
+
+        @media all and (min-width: 425px) and (max-width: 767px) {
+            @include li-media-last2;
+        }
+
+
+        a {
+        @include link-li;
+
+        &:hover {
+            @include hover-li;
+            }
+
+        }
+
+
+        }
+    }
+}
+
+
+.title1 {
+
+    @include title1;
+
+    @media all and (max-width: 320px) {
+        @include title1-media-first3;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include title1-media-first3;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include title1-media-first3;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include title1-media-laptop;
+    }
+
+    &:hover {
+        @include title-hover;
+    }
+
+
+}
+
+
+
+.title2 {
+
+
+    @include title2;
+
+    @media all and (max-width: 320px) {
+        @include title2-media-small;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include title2-media-medium;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include title2-media-big;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include title2-media-laptop;
+    }
+
+    &:hover {
+        @include title-hover;
+    }
+}
+
+
+
+.box1 {
+
+    .title3 {
+        @include title3;
+
+        &:hover {
+            @include hover-title3;
+        }
+
+        @media all and (max-width: 320px) {
+            @include title3-media-small;
+        }
+    
+        @media all and (min-width: 374px) and (max-width: 424px) {
+            @include title3-media-mid2;
+        }
+
+        @media all and (min-width: 425px) and (max-width: 767px) {
+            @include title3-media-mid2;
+        }
+
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+            @include title3-media-laptop;
+        }
+
+        @media all and (min-width: 1551px) and (max-width: 2560px) {
+            @include title3-media-TV;
+        }
+        
+    
+    }
+
+    .prgh1 {
+        @include prgh1;
+
+        &:hover {
+            @include hover-prgh1;
+        }
+
+        @media all and (max-width: 320px) {
+            @include prgh1-media-first4;
+        }
+    
+        @media all and (min-width: 374px) and (max-width: 424px) {
+            @include prgh1-media-first4;
+        }
+
+        @media all and (min-width: 425px) and (max-width: 767px) {
+            @include prgh1-media-first4;
+        }
+
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+            @include prgh1-media-first4;
+        }
+
+        @media all and (min-width: 1551px) and (max-width: 2560px) {
+            @include prgh1-media-TV;
+        }
+    }
+
+}
+
+.box-gif {
+
+    @include box-gif;
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include box-gif-media-laptop;
+    }
+    
+    .gif {
+        @include gif;
+
+        @media all and (max-width: 320px) {
+            @include gif-media-first3;
+        }
+    
+        @media all and (min-width: 374px) and (max-width: 424px) {
+            @include gif-media-first3;
+        }
+    
+        @media all and (min-width: 425px) and (max-width: 767px) {
+            @include gif-media-first3;
+        }
+
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+            @include gif-media-laptop;
+        }
+    }
+
+}
+
+
+.title4 {
+    @include title4;
+
+    @media all and (max-width: 320px) {
+        @include title4-media-small;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include title4-media-medium;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include title4-media-big;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include title4-media-laptop;
+    }
+
+    &:hover {
+        @include title-hover;
+    }
+
+}
+
+.list1 {
+
+
+    @include list1;
+
+    @media all and (max-width: 320px) {
+        @include list1-media-all;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include list1-media-all;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include list1-media-all;
+    }
+
+
+    .li1 {
+        @include li1;
+
+        @media all and (max-width: 320px) {
+            @include l1-media-small;
+        }
+    
+        @media all and (min-width: 374px) and (max-width: 424px) {
+            @include l1-media-mid2;
+        }
+
+        @media all and (min-width: 425px) and (max-width: 767px) {
+            @include l1-media-mid2;
+        }
+
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+            @include l1-media-laptop;
+        }
+    
+
+
+        .link1 {
+
+            @include link1;
+
+            &:hover {
+                @include hover-link1;
+            }
+            
+        }
+    }
+}
+
+hr {
+
+
+    @media all and (max-width: 320px) {
+        @include hr-media-all;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include hr-media-all;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include hr-media-all;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include hr-media-all;
+    }
+
+}
+
+.link2 {
+
+    @include link2;
+
+    &:hover {
+        @include hover-link2;
+    }
+
+}
+
+.link3 {
+
+    @include link3;
+
+    &:hover {
+        @include hover-link3;
+    }
+
+}
+
+.box2 {
+
+    .title5 {
+        @include title5;
+
+        @media all and (max-width: 320px) {
+            @include title5-media-small;
+        }
+    
+        @media all and (min-width: 374px) and (max-width: 424px) {
+            @include title5-media-mid2;
+        }
+
+        @media all and (min-width: 425px) and (max-width: 767px) {
+            @include title5-media-mid2;
+        }
+
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+            @include title5-media-laptop;
+        }
+    
+
+        &:hover {
+            @include hover-title5;
+        }
+
+    }
+
+    .prgh2 {
+        @include prgh2;
+
+        @media all and (max-width: 320px) {
+            @include prgh2-media-small;
+        }
+    
+        @media all and (min-width: 374px) and (max-width: 424px) {
+            @include prgh2-media-mid3;
+        }
+
+        @media all and (min-width: 425px) and (max-width: 767px) {
+            @include prgh2-media-mid3;
+        }
+
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+            @include prgh2-media-mid3;
+        }
+
+        @media all and (min-width: 1551px) and (max-width: 2560px) {
+            @include prgh2-media-TV;
+        }
+
+
+        &:hover {
+            @include hover-prgh2;
+        }
+
+    }
+
+}
+
+.box-gif2 {
+
+    
+
+    @include box-gif2;
+
+    @media all and (max-width: 320px) {
+        @include box-gif2-first3;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include box-gif2-first3;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include box-gif2-first3;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include box-gif2-laptop;
+    }
+
+    
+    .gif2 {
+
+        @include gif2;
+
+        @media all and (max-width: 320px) {
+            @include gif2-media-first3;
+        }
+    
+        @media all and (min-width: 374px) and (max-width: 424px) {
+            @include gif2-media-first3;
+        }
+
+        @media all and (min-width: 425px) and (max-width: 767px) {
+            @include gif2-media-first3;
+        }
+
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+            @include gif2-media-laptop;
+        }
+
+    }
+
+}
+
+footer {
+    
+
+    .box-footer {
+        @include box-footer;
+
+    .alignment {
+
+        @include alignment;
+
+        @media all and (max-width: 320px) {
+            @include alignment-media-all;
+        }
+    
+        @media all and (min-width: 374px) and (max-width: 424px) {
+            @include alignment-media-all;
+        }
+
+        @media all and (min-width: 425px) and (max-width: 767px) {
+            @include alignment-media-all;
+        }
+
+        .section {
+            @include section;
+
+            @media all and (min-width: 1551px) and (max-width: 2560px) {
+                font-size: 22px;
+            }
+        }
+
+
+        a {
+            @include link-footer;
+
+            &:hover {
+                @include hover-footer;
+            }
+        }
+    }
+
+    }
+}
+
+.title-footer:hover {
+    @include title-hover;
+}
+
+.footer-prgh1:hover {
+    @include title-hover;
+}
+
+
+// About me
+
+
+.title-about {
+
+    @include title-about;
+
+    @media all and (max-width: 320px) {
+        @include title-about-media-small;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include title-about-media-medium;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include title-about-media-last2;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include title-about-media-last2;
+    }
+
+    &:hover {
+        @include title-hover;
+    }
+}
+
+.prgh1-about {
+
+    @include prgh-about;
+
+    @media all and (max-width: 320px) {
+        @include prgh1-about-media-small;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include prgh1-about-media-mid3;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include prgh1-about-media-mid3;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include prgh1-about-media-mid3;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1550px) {
+        @include prgh1-service-media-laptopmid;
+    }
+
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include prgh1-about-media-TV;
+    }
+}
+
+// Services
+
+.title-service {
+    @include title-service;
+
+    @media all and (max-width: 320px) {
+        @include title-service-media-small;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include title-service-media-last3;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include title-service-media-last3;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include title-service-media-last3; 
+    }
+
+    &:hover {
+        @include hover-service;
+    }
+}
+
+.title-service2 {
+
+    @include title-service2;
+
+    @media all and (max-width: 320px) {
+        @include title2-service-media-small;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include title2-service-media-last3;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include title2-service-media-last3;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include title2-service-media-last3;   
+    }
+
+    &:hover {
+        @include hover-service;
+    }
+}
+
+.title-service3 {
+    @include title-service3;
+
+    
+    @media all and (max-width: 320px) {
+        @include title3-service-media-small;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include title3-service-media-medium;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include title3-service-media-last2;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include title3-service-media-last2;
+    }
+
+    &:hover {
+        @include hover-service;
+    }
+}
+
+.title-service4 {
+    @include title-service4;
+
+    @media all and (max-width: 320px) {
+        @include title4-service-media-small;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include title4-service-media-medium;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include title4-service-media-last2;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include title4-service-media-last2;  
+    }
+
+    &:hover {
+        @include hover-service;
+    }
+}
+
+.prgh1-service {
+    @include prgh-service;
+
+    @media all and (max-width: 320px) {
+        @include prgh1-about-media-small;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include prgh1-about-media-mid3;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include prgh1-about-media-mid3;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include prgh1-about-media-mid3;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1550px) {
+        @include prgh1-service-media-laptopmid;
+    }
+
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include prgh1-service-media-TV;
+    }
+}
+
+.prgh2-service {
+
+    @include prgh2-service;
+
+    @media all and (max-width: 320px) {
+        @include prgh2-service-media-all;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include prgh2-service-media-all;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include prgh2-service-media-all;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include prgh2-service-media-all;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1550px) {
+        
+    }
+
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include prgh2-service-media-TV;
+    }
+}
+
+.prgh3-service {
+    @include prgh3-service;
+
+    @media all and (min-width: 1024px) and (max-width: 1550px) {
+        
+    }
+
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include prgh3-service-media-TV;
+    }
+}
+
+.list-service {
+    @include list-service;
+
+    @media all and (max-width: 320px) {
+        @include list-service-media-small;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include list-service-media-last3;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include list-service-media-last3;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include list-service-media-last3;
+    }
+
+    &:hover {
+        @include hover-service;
+    }
+}
+
+.box-img {
+
+    @include box-img;
+
+    @media all and (max-width: 320px) {
+        @include box-img-media-all;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include box-img-media-all;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include box-img-media-all;
+    }
+
+
+    img {
+
+        @include img-service;
+
+        @media all and (max-width: 320px) {
+            @include img-media-all;
+        }
+    
+        @media all and (min-width: 374px) and (max-width: 424px) {
+            @include img-media-all;
+        }
+
+        @media all and (min-width: 425px) and (max-width: 767px) {
+            @include img-media-all;
+        }
+
+    }
+
+    figcaption {
+
+        @include figcaption;
+
+        @media all and (max-width: 320px) {
+            @include figcaption-media-all;
+        }
+    
+        @media all and (min-width: 374px) and (max-width: 424px) {
+            @include figcaption-media-all;
+        }
+
+        @media all and (min-width: 425px) and (max-width: 767px) {
+            @include figcaption-media-all;
+        }
+
+    }
+}
+
+.link-service {
+    @include link-service;
+
+    &:hover {
+        @include hover-service;
+    }
+
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include link-services-media-TV;
+    }
+}
+
+.link-service2 {
+    @include link-service2;
+
+    &:hover {
+        @include hover-service;
+    }
+
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include link-services-media-TV;
+    }
+}
+
+.link-service3 {
+    @include link-service3;
+
+    &:hover {
+        @include hover-service;
+    }
+
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include link-services-media-TV;
+    }
+}
+
+
+fieldset {
+    @include fieldset;
+}
+
+label {
+    @include label;
+
+    @media all and (max-width: 320px) {
+        @include label-media-all;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include label-media-all;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include label-media-all;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include label-media-all;
+    }
+
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include label-media-TV;
+    }
+}
+
+input {
+    @include input;
+
+    @media all and (max-width: 320px) {
+        @include input-media-all;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include input-media-all;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include input-media-all;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include input-media-all;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1550px) {
+        @include input-media-bigscreens;
+    }
+
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include input-media-bigscreens;
+    }
+
+    &:focus {
+        @include focus-input;
+    }
+}
+
+::placeholder {
+        @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include button2-media-TV;
+    }
+}
+
+.textarea1 {
+    @include textarea;
+
+    @media all and (max-width: 320px) {
+        @include textarea-media-all;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include textarea-media-all;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include textarea-media-all;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include textarea-media-all;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1550px) {
+        @include textarea-media-bigscreens;
+    }
+
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include textarea-media-bigscreens;
+    }
+
+    &:focus {
+        @include focus-input;
+    }
+}
+
+.button1 {
+
+
+    @include button;
+
+    @media all and (max-width: 320px) {
+        @include button-media-small;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include button-media-mid2;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include button-media-mid2;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include button-media-laptop;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1550px) {
+        @include button2-media-laptopmid;
+    }
+
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include button2-media-TV;
+    }
+
+    &:hover {
+        @include hover-button;
+    }
+}
+
+
+.feedback {
+    @include feedback;
+}
+
+
+.button2 {
+    @include button2;
+
+    @media all and (max-width: 320px) {
+        @include button2-media-small;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include button2-media-mid2;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include button2-media-mid2;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include button2-media-laptop;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1550px) {
+        @include button2-media-laptopmid;
+    }
+
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include button2-media-TV;
+    }
+
+    &:hover {
+        @include hover-button2;
+    }
+}
+
+
+.textarea2 {
+    @include textarea2;
+
+    @media all and (max-width: 320px) {
+        @include textarea2-media-first3;
+    }
+
+    @media all and (min-width: 374px) and (max-width: 424px) {
+        @include textarea2-media-first3;
+    }
+
+    @media all and (min-width: 425px) and (max-width: 767px) {
+        @include textarea2-media-first3;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        @include textarea2-media-first3;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1550px) {
+        @include textarea2-media-laptopmid;
+    }
+    
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include textarea2-media-TV;
+    }
+
+    &:focus {
+        @include focus-input2;
+    }
+}
+
+#FeedbackForm {
+    @media all and (min-width: 1024px) and (max-width: 1550px) {
+        @include Form-media-midbigscreen;
+    }
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include Form-media-TV;
+    }
+}
+
+#Contacts {
+    @media all and (min-width: 1024px) and (max-width: 1550px) {
+        @include Form-media-midbigscreen;
+    }
+    @media all and (min-width: 1551px) and (max-width: 2560px) {
+        @include Form-media-TV;
+    }
+}

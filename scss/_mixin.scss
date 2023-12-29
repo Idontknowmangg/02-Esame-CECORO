@@ -1,0 +1,1041 @@
+@mixin topnav {
+    display: block;
+}
+
+@mixin box-gif {  
+    display: flex;
+    justify-content: right;
+    margin-right: 5%;
+}
+
+@mixin box-gif2 {  
+    margin-left: 6%;
+}
+
+@mixin box-footer {
+    margin-top: 40px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Outfit', sans serif;
+}
+
+@mixin link-footer {
+    text-decoration: none;
+    color: #fff;
+}
+
+@mixin hover-footer {
+    color: #356cf6;
+    transition: .3s;
+}
+
+@mixin alignment {
+    display: flex;
+}
+
+@mixin section {
+    width: 100%;
+    text-align: center;
+}
+
+@mixin title-hover {
+    color: #779eff;
+    transition: .5s;
+}
+
+@mixin gif {
+    margin: 10px;
+    margin-right: 5%;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: right;
+}
+
+@mixin gif2 {
+    border: 2px solid #d9a130;
+}
+
+@mixin menu-ul {
+    display: flex;
+    position: fixed;
+    background-color: #c2d3ff;
+    padding: 1%;
+    margin-top: -10%;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 20px #253e7e;
+    margin-left: -6px;
+}
+
+@mixin hover-ul {
+    transition: .3s;
+}
+
+
+@mixin image {
+    opacity: 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: -20%;
+    left: 5px;
+}
+
+@mixin hover-image {
+    opacity: 100%;
+    transition: .3s;
+}
+
+@mixin menu-li {
+    font-family: 'Outfit Black', sans serif;
+    list-style-type: none;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 20px;
+}
+
+@mixin hover-li {
+    transform: scale(1.1);
+    transition: .5s;
+    color: #414c73;
+}
+
+@mixin link-li {
+    text-decoration: none;
+    color: #5f7bd6;
+    text-align: center;
+    padding: 0;
+    height: 30px;
+    width: 140px;
+}
+
+
+@mixin title1 {
+    font-family: 'Outfit', sans serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    margin-top: 10%;
+}
+
+
+
+
+@mixin title2 {
+    font-family: 'Outfit', sans serif;
+    font-size: 40px;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin title3 {
+    font-size: 40px;
+    font-family: 'Outfit', sans serif;
+    display: flex;
+}
+
+@mixin title4 {
+    margin-top: 12%;
+    font-family: 'Outfit', sans serif;
+    font-size: 50px;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin title5 {
+    font-size: 40px;
+    font-family: 'Outfit', sans serif;
+    text-align: right;
+    margin-top: 5%;
+}
+
+@mixin hover-title5 {
+    color: #d9a130;
+    transition: .3s;
+}
+
+@mixin hover-title3 {
+    color: #40acc4;
+    transition: .3s;
+}
+
+@mixin hover-prgh1 {
+    color: #40acc4;
+    transition: .3s;
+    border-top: 1px solid #40acc4;
+}
+
+@mixin hover-prgh2 {
+    color: #d9a130;
+    transition: .3s;
+    border-top: 1px solid #d9a130;
+}
+
+
+@mixin prgh1 {
+    font-family: 'Outfit', sans serif;
+    width: 45%;
+    margin-top: -15%;
+    border-top: 1px solid #000;
+    padding-top: 5px;
+}
+
+@mixin prgh2 {
+    font-family: 'Outfit', sans serif;
+    width: 45%;
+    border-top: 1px solid #000;
+    padding-top: 5px;
+    float: right;
+}
+
+@mixin box1 {
+    width: 100%;
+    display: flex;
+}
+
+@mixin box2 {
+    width: 100%;
+    display: flex;
+}
+
+@mixin list1 {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin li1 {
+    display: flex;
+    font-size: 25px;
+    font-family: 'Outfit', sans serif;
+    margin: 6%;
+}
+
+@mixin link1 {
+    text-decoration: none;
+    color: #000;
+    opacity: 40%;
+}
+
+@mixin link2 {
+    text-decoration: none;
+    color: #000;
+    opacity: 40%;
+}
+
+@mixin link3 {
+    text-decoration: none;
+    color: #000;
+    opacity: 40%;
+}
+
+@mixin hover-link1 {
+    transform: scale(1.1);
+    transition: .3s;
+    background-image: url(../gifs/video9.gif);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 20%;
+    height: 80px;
+    text-align: center;
+    opacity: 90%;
+    border: 3px solid #66f5ff;
+    color: #fff;
+}
+
+@mixin hover-link2 {
+    transform: scale(1.1);
+    transition: .3s;
+    background-image: url(../gifs/video5.gif);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 20%;
+    text-align: center;
+    opacity: 90%;
+    border: 3px solid #668fff;
+    color: #fff;
+}
+
+@mixin hover-link3 {
+    transform: scale(1.1);
+    transition: .3s;
+    background-image: url(../gifs/video7.gif);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    text-align: center;
+    opacity: 90%;
+    border: 3px solid #ff9766;
+    color: #fff;
+}
+
+// About me
+
+@mixin title-about {
+    font-family: 'Outfit', sans serif;
+    text-align: center;
+}
+
+@mixin prgh-about {
+    font-family: 'Outfit', sans serif;
+    padding: 10px;
+    text-align: center;
+    margin-left: 4%;
+    width: 90%;
+}
+
+// Services
+
+@mixin title-service {
+    font-family: 'Outfit', sans serif;
+    text-align: center;
+}
+
+@mixin title-service2 {
+    font-family: 'Outfit', sans serif;
+    text-align: center;
+    margin-top: -10%;
+    margin-bottom: 10%;
+    font-size: 22px;
+}
+
+@mixin title-service3 {
+    font-family: 'Outfit', sans serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+@mixin title-service4 {
+    font-family: 'Outfit', sans serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+@mixin prgh-service {
+    font-family: 'Outfit', sans serif;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+    margin-left: 3%;
+}
+
+@mixin prgh2-service {
+    font-family: 'Outfit', sans serif;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+    margin-left: 3%;
+}
+
+@mixin list-service {
+    list-style-type: none;
+    display: inline;
+    font-size: 30px;
+    font-family: 'Outfit', sans serif;
+}
+
+@mixin box-img {
+    display: flex;
+    width: 95%;
+}
+
+@mixin img-service {
+    margin-left: 15%;
+    margin-top: 3%;
+}
+
+@mixin figcaption {
+    margin-top: 15%;
+    margin-left: 2%;
+}
+
+@mixin fieldset {
+    border: none;
+}
+
+@mixin link-service {
+    text-decoration: none;
+    color: #000;
+}
+
+@mixin link-service2 {
+    text-decoration: none;
+    color: #000;
+    margin-top: 15%;
+    width: 10%;
+}
+
+@mixin prgh3-service {
+    font-family: 'Outfift', sans-serif;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+@mixin link-service3 {
+    text-decoration: none;
+    color: #000;
+    margin-top: 10%;
+    width: 10%;
+}
+
+@mixin link-service4 {
+    text-decoration: none;
+    color: #000;
+    margin-top: 10%;
+    text-align: center;
+    width: 10%;
+}
+
+@mixin hover-service {
+    color: #779eff;
+    transition: .2s;
+}
+
+@mixin label {
+    padding: 10px;
+    display: block;
+    font-family: 'Outfit', sans serif;
+    font-size: 17px;
+}
+
+@mixin input {
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #356cf6;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-family: 'Outfit', sans serif;
+    font-size: 17px;
+    margin-bottom: 5%;
+}
+
+@mixin textarea {
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Outfit', sans serif;
+    border: 3px solid #356cf6;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+@mixin textarea2 {
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Outfit', sans serif;
+    border: 3px solid #475575;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+@mixin focus-input {
+    background-color: #779eff;
+    transition: .3s;
+}
+
+@mixin focus-input2 {
+    background-color: #939db4;
+    transition: .3s;
+}
+
+@mixin button {
+    padding: 10px;
+    background-color: #356cf6;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Outfit', sans serif;
+    font-size: 17px;
+    margin-top: 2%;
+    width: 25%;
+}
+
+@mixin button2 {
+    padding: 10px;
+    background-color: #475575;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Outfit', sans serif;
+    font-size: 17px;
+    margin-top: 2%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin hover-button {
+    background-color: #516fdb;
+    transition: .5s;
+    cursor: pointer;
+}
+
+@mixin hover-button2 {
+    background-color: #484e57;
+    transition: .5s;
+    cursor: pointer;
+}
+
+// Media-queries
+
+@mixin ul-media-small {
+    display: block;
+    z-index: 1000;
+    margin-top: -43%;
+    padding: 10px;
+}
+
+@mixin ul-media-last2 {
+    display: block;
+    z-index: 1000;
+    margin-top: -43%;
+    padding: 10px;
+}
+
+
+
+
+@mixin li-media-small {
+    margin-right: 5%;
+    padding: 5px;
+    width: 95%;
+    font-size: 14px;
+}
+
+@mixin li-media-last2 {
+    font-size: 15px;
+}
+
+
+
+@mixin title1-media-first3 {
+    font-size: 30px;
+    margin-top: 45%;
+}
+
+@mixin title1-media-laptop {
+    font-size: 38px;
+}
+
+
+
+@mixin title2-media-small {
+    font-size: 18px;
+    text-align: center;
+}
+
+@mixin title2-media-medium {
+    font-size: 20px;
+    text-align: center;
+}
+
+@mixin title2-media-big {
+    font-size: 22px;
+    text-align: center;
+}
+
+@mixin title2-media-laptop {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+@mixin title3-media-small {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    margin-left: 5%;
+}
+
+@mixin title3-media-mid2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+@mixin title3-media-laptop {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    text-align: center;
+}
+
+@mixin title3-media-TV {
+    font-size: 36px;
+    text-align: center;
+}
+
+
+
+@mixin prgh1-media-first4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+@mixin prgh1-media-TV {
+    margin-top: 0.1px;
+    width: 25%;
+    font-size: 22px;
+}
+
+@mixin prgh2-media-TV {
+    margin-top: 0.1px;
+    width: 25%;
+    margin-top: 2%;
+    font-size: 22px;
+}
+
+
+
+@mixin box-gif-media-laptop {
+    width: 77%;
+}
+
+
+
+@mixin gif-media-first3 {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: 7%;
+}
+
+@mixin gif-media-laptop {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: 10%;
+}
+
+
+
+@mixin gif-bg-media-all {
+    width: 70%;
+    height: 180px;  
+}
+
+
+
+@mixin title4-media-small {
+    font-size: 20px;
+}
+
+@mixin title4-media-medium {
+    font-size: 24px;
+}
+
+@mixin title4-media-big {
+    font-size: 26px;
+}
+
+@mixin title4-media-laptop {
+    font-size: 34px;
+}
+
+
+
+@mixin list1-media-all {
+    margin-right: 10%;
+}
+
+
+
+@mixin l1-media-small {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 12px;
+    padding: 0;
+}
+
+@mixin l1-media-mid2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 16px;
+    padding: 0;
+}
+
+@mixin l1-media-laptop {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+    padding: 0;
+}
+
+
+
+@mixin hr-media-all {
+    width: 90%;
+}
+
+
+
+@mixin title5-media-small {
+    width: 90%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+@mixin title5-media-mid2 {
+    width: 90%;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+@mixin title5-media-laptop {
+    width: 90%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+
+
+@mixin prgh2-media-small {
+    width: 90%;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 15px;
+}
+
+@mixin prgh2-media-mid3 {
+    width: 90%;
+    text-align: center;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+
+
+@mixin box-gif2-first3 {
+    margin-right: 35px;
+}
+
+@mixin box-gif2-laptop {
+    margin-left: 22%;
+}
+
+
+
+@mixin gif2-media-first3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: 5px;
+}
+
+@mixin gif2-media-laptop {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-right: 5px;
+}
+
+
+
+@mixin alignment-media-all {
+    display: block;
+}
+
+@mixin alignment-media-big {
+    display: block;
+    padding: 10px;
+}
+
+
+
+@mixin title-about-media-small {
+    font-size: 20px;
+}
+
+@mixin title-about-media-medium {
+    font-size: 24px;
+}
+
+@mixin title-about-media-last2 {
+    font-size: 26px;
+}
+
+
+
+@mixin prgh1-about-media-small {
+    font-size: 12px;
+}
+
+@mixin prgh1-about-media-mid3 {
+    font-size: 14px;
+}
+
+@mixin prgh1-service-media-laptopmid {
+    width: 35%;
+    margin-left: 32%;
+    font-size: 22px;
+}
+
+@mixin prgh1-about-media-TV {
+    width: 35%;
+    margin-left: 32%;
+    font-size: 22px;
+}
+
+
+
+@mixin title-service-media-small {
+    font-size: 16px;
+}
+
+@mixin title-service-media-last3 {
+    font-size: 18px;
+}
+
+
+
+@mixin title2-service-media-small {
+    font-size: 10px;
+}
+
+@mixin title2-service-media-last3 {
+    font-size: 12px;
+}
+
+
+
+@mixin title3-service-media-small {
+    font-size: 24px;
+}
+
+@mixin title3-service-media-medium {
+    font-size: 26px;
+}
+
+@mixin title3-service-media-last2 {
+    font-size: 28px;
+}
+
+
+
+@mixin title4-service-media-small {
+    font-size: 20px;
+}
+
+@mixin title4-service-media-medium {
+    font-size: 22px;
+}
+
+@mixin title4-service-media-last2 {
+    font-size: 24px;
+}
+
+
+
+@mixin prgh1-service-media-small {
+    width: 95%;
+    font-size: 12px;
+}
+
+@mixin prgh1-service-media-last3 {
+    width: 95%;
+    font-size: 14px;
+}
+
+@mixin prgh1-service-media-laptopmid {
+    width: 60%;
+    margin-left: 19%;
+}
+
+@mixin prgh1-service-media-TV {
+    width: 60%;
+    font-size: 24px;
+    margin-left: 20%;
+}
+
+@mixin prgh2-service-media-TV {
+    width: 60%;
+    font-size: 24px;
+    margin-left: 19%;
+}
+
+@mixin prgh3-service-media-TV {
+    width: 60%;
+    font-size: 26px;
+    margin-left: 20%;
+}
+
+
+
+@mixin prgh2-service-media-all {
+    width: 90%;
+    text-align: center;
+    margin-left: 2%;
+    font-size: 12px;
+}
+
+
+
+@mixin list-service-media-small {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+@mixin list-service-media-last3 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+}
+
+
+
+@mixin box-img-media-all {
+    display: block;
+}
+
+
+
+@mixin img-media-all {
+    width: 90%;
+    margin-left: 8%;
+}
+
+
+
+@mixin figcaption-media-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-size: 18px;
+}
+
+@mixin label-media-all {
+    font-size: 16px;
+}
+
+@mixin input-media-all {
+    width: 85%;
+    font-size: 14px;
+}
+
+
+@mixin textarea-media-all {
+    width: 85%;
+    font-size: 14px;
+}
+
+@mixin textarea2-media-first3 {
+    width: 85%;
+    font-size: 14px;
+}
+
+@mixin textarea2-media-laptopmid {
+    width: 70%;
+}
+
+@mixin textarea2-media-TV {
+    font-size: 18px;
+    width: 70%;
+}
+
+
+
+@mixin button-media-small {
+    width: 95%;
+    font-size: 14px;
+    margin-left: 3%;
+}
+
+@mixin button-media-mid2 {
+    width: 90%;
+    font-size: 14px;
+    margin-left: 4%;
+}
+
+@mixin button-media-laptop {
+    width: 90%;
+    font-size: 14px;
+}
+
+// Ho aggiunto il secondo pulsante (feedback) che manipolo la misura di schermi grandi
+
+@mixin button2-media-small {
+    width: 95%;
+    font-size: 14px;
+    margin-left: 3%;
+}
+
+@mixin button2-media-mid2 {
+    width: 90%;
+    font-size: 14px;
+    margin-left: 4%;
+}
+
+@mixin button2-media-laptop {
+    width: 90%;
+    font-size: 14px;
+}
+
+@mixin button2-media-laptopmid {
+    width: 75%;
+    font-size: 20px;
+}
+
+@mixin button2-media-TV {
+    width: 75%;
+    font-size: 20px;
+}
+
+// Aggiunto altri nomi attributi per semplificare la ricerca
+
+@mixin link-services-media-TV {
+    font-size: 22px;
+}
+
+@mixin label-media-TV {
+    font-size: 20px;
+}
+
+@mixin input-media-bigscreens {
+    width: 70%;
+}
+
+@mixin textarea-media-bigscreens {
+    width: 70%;
+}
+
+@mixin feedback {
+    margin-top: 3%;
+}
+
+@mixin Form-media-midbigscreen {
+    margin-top: 2%;
+    margin-left: 15%;
+}
+
+@mixin Form-media-TV {
+    margin-top: 2%;
+    margin-left: 17%;
+}
